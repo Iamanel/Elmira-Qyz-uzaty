@@ -132,6 +132,13 @@
     .hero-corner.tr { top: 2.5rem; right: 2.5rem; border-width: 1px 1px 0 0; }
     .hero-corner.bl { bottom: 2.5rem; left: 2.5rem; border-width: 0 0 1px 1px; }
     .hero-corner.br { bottom: 2.5rem; right: 2.5rem; border-width: 0 1px 1px 0; }
+    
+    @media(max-width:600px){
+      .hero-corner { width: 36px; height: 36px; }
+      .hero-corner.tl, .hero-corner.tr { top: 4rem; }
+      .hero-corner.bl, .hero-corner.br { bottom: 3rem; }
+    }
+    
     .hero-content { max-width: 640px; margin: 0 auto; }
     .hero-eyebrow {
       font-family: var(--font-ui); font-size: .73rem; font-weight: 500;
