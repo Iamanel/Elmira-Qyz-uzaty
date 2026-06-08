@@ -43,6 +43,20 @@
         radial-gradient(ellipse 60% 80% at 80% 90%, rgba(201,169,110,0.07) 0%, transparent 60%);
       pointer-events: none; z-index: 0;
     }
+    /* ── LANGUAGE SWITCHER ── */
+    .lang-btn {
+      position: fixed; top: 1.25rem; left: 1.25rem; z-index: 100;
+      background: var(--white); border: 1px solid var(--cream-dark);
+      border-radius: 20px; padding: 0 14px;
+      height: 44px; display: flex; align-items: center; gap: 6px;
+      cursor: pointer; color: var(--brown);
+      font-family: var(--font-ui); font-size: .72rem;
+      font-weight: 500; letter-spacing: .1em;
+      transition: background .2s, border-color .2s;
+      white-space: nowrap;
+    }
+    .lang-btn:hover { background: var(--cream-mid); border-color: var(--gold); }
+    .lang-btn svg { flex-shrink: 0; }
 
     /* SOUND BUTTON */
     .sound-btn {
