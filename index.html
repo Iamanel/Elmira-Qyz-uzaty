@@ -189,10 +189,11 @@
       width: 6px; height: 6px; background: var(--gold);
       opacity: .7; transform: rotate(45deg);
     }
-    .hero-date {
+    .hero-date span{
       font-family: var(--font-body); font-size: .82rem; font-weight: 400;
       letter-spacing: .18em; color: var(--text-light);
       text-transform: uppercase; transition-delay: .5s;
+      display: block;
     }
     .scroll-hint {
       display: inline-flex; flex-direction: column;
@@ -449,8 +450,11 @@
       <h1 class="hero-title reveal">Эльмира</h1>
       <p class="hero-name reveal" data-kk="Қыз ұзату" data-ru="Проводы невесты">Қыз ұзату</p>
       <div class="divider reveal"><span></span><div class="divider-diamond"></div><span></span></div>
-      <p class="hero-date reveal" data-kk="2026 жылдың 9 тамызы" data-ru="9 августа 2026 года">2026 жылдың</p>
-      <p class="hero-date reveal" data-kk="2026 жылдың 9 тамызы" data-ru="9 августа 2026 года">9 тамызы</p>
+      <p class="hero-date reveal"
+        data-kk="2026 жылдың<br>9 тамызы"
+        data-ru="9 августа<br>2026 года">
+        2026 жылдың<br>9 тамызы
+      </p>
       <a href="#countdown-section" class="scroll-hint reveal">
         <span data-kk="Төмен қараңыз" data-ru="Листайте вниз">Төмен қараңыз</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
