@@ -159,12 +159,12 @@
       .hero-corner.bl, .hero-corner.br { bottom: 3rem; }
     }
     
-    .hero-content { max-width: 640px; margin: 0 auto;}
+    .hero-content { min-height: 80vh; display: flex; flex-direction: column;}
     .hero-top {
-      transform: translateY(-80px); /* подними имя выше */
+      transform: translateY(-80px);
     }
     .hero-bottom {
-      margin-top: auto; /* прижмёт дату вниз */
+      margin-top: auto;
     }
     .hero-eyebrow {
       font-family: var(--font-ui); font-size: .73rem; font-weight: 500;
@@ -176,14 +176,12 @@
       font-size: clamp(3.2rem, 11vw, 7rem);
       font-weight: 400; font-style: italic; line-height: 1.02;
       color: var(--brown); margin-bottom: .6rem; transition-delay: .2s;
-      margin-top: -100px
     }
     .hero-name {
       font-family: var(--font-body);
       font-size: clamp(1.15rem, 3.2vw, 1.75rem);
       font-weight: 300; color: var(--text-mid);
       letter-spacing: .1em; transition-delay: .3s;
-      margin-top: -80px
     }
     .divider {
       display: flex; align-items: center; justify-content: center;
@@ -201,7 +199,6 @@
       font-family: var(--font-body); font-size: .82rem; font-weight: 400;
       letter-spacing: .18em; color: var(--text-light);
       text-transform: uppercase; transition-delay: .5s;
-      margin-top: 80px;
     }
     .scroll-hint {
       display: inline-flex; flex-direction: column;
@@ -211,7 +208,7 @@
       letter-spacing: .14em; text-transform: uppercase;
       transition-delay: .65s;
       animation: bob 2.4s ease-in-out infinite 2s;
-      margin-top: 100px;
+      margin-top: 30px
     }
     .scroll-hint:hover { color: var(--gold); }
     @keyframes bob {
