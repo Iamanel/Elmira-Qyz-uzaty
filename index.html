@@ -129,6 +129,20 @@
         background-size: cover;
         background-position: right top;
       }
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding: 60px 24px 48px;
+      }
+      .hero-top {
+        transform: none;   /* remove the -80px shift */
+      }
+      .hero-bottom {
+        margin-top: 0;
+        text-align: center;
+      }
     }
     .hero::after {
       content: ''; position: absolute; left: 50%; top: 3rem;
