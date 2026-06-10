@@ -127,7 +127,7 @@
           linear-gradient(160deg, rgba(247,240,230,0.4) 0%, rgba(237,227,212,0.4) 100%),
           url('fon-mobile.png');
         background-size: cover;
-        background-position: 85% top;;
+        background-position: right top;;
       }
     }
     .hero::after {
@@ -159,12 +159,18 @@
       .hero-corner.bl, .hero-corner.br { bottom: 3rem; }
     }
     
-    .hero-content { min-height: 80vh; display: flex; flex-direction: column;}
+    .hero-content { 
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      padding: 60px 24px 48px;}
     .hero-top {
-      transform: translateY(-80px);
+      transform: none;
     }
     .hero-bottom {
-      margin-top: auto;
+      margin-top: 0;
+      text-align: center;
     }
     .hero-eyebrow {
       font-family: var(--font-ui); font-size: .73rem; font-weight: 500;
